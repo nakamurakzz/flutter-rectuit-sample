@@ -15,6 +15,8 @@ dependencies:
   amplify_auth_cognito: ^0.6.0
   cupertino_icons: ^1.0.2
   amplify_authenticator: ^0.2.4
+  marquee: ^2.2.3
+  flutter_svg: ^1.1.6
 
 dev_dependencies:
   flutter_test:
@@ -23,3 +25,12 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+
+  assets:
+    - assets/icons/
+
+  fonts:
+    - family: NotoSansJp
+      fonts:
+        - asset: assets/fonts/NotoSansJP-Thin.otf
+          weight: 100

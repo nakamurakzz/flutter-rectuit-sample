@@ -1,5 +1,6 @@
 import 'package:contents_management/models/Contents.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/svg.dart';
 
 class ContentsList extends StatelessWidget {
   final bool isEnabled;
@@ -18,21 +19,35 @@ class ContentsList extends StatelessWidget {
   Widget build(BuildContext context) {
     return Expanded(
       child: ListView.builder(
+        shrinkWrap: true,
         itemCount: contents.length,
         itemBuilder: (BuildContext context, int index) {
           return GestureDetector(
               child: Card(
+                elevation: 0,
+                color: selectContentIndex == index
+                    ? Color.fromRGBO(200, 230, 250, 1)
+                    : Colors.white,
+                borderOnForeground: true,
                 margin: EdgeInsets.symmetric(vertical: 0),
                 child: Padding(
-                    padding: EdgeInsets.symmetric(vertical: 10),
+                    padding: EdgeInsets.symmetric(horizontal: 10, vertical: 10),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.start,
                       children: [
                         Text(contents[index].title,
-                            style: const TextStyle(fontSize: 24)),
+                            style: TextStyle(
+                                fontSize: 24,
+                                color: selectContentIndex == index
+                                    ? Colors.blue
+                                    : Colors.black)),
                         Spacer(),
                         isEnabled
-                            ? const Icon(Icons.delete_outline)
+                            ? SvgPicture.asset(
+                                'assets/icons/delete.svg',
+                                width: 20,
+                                height: 20,
+                              )
                             : Container(),
                         SizedBox(width: 12),
                       ],
