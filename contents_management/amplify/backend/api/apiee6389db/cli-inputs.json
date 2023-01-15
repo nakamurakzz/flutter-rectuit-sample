@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "paths": {
+    "/contents": {
+      "name": "/contents",
+      "lambdaFunction": "contentsmanagemente92b20e7",
+      "permissions": {
+        "setting": "private",
+        "auth": [
+          "create",
+          "read",
+          "update",
+          "delete"
+        ]
+      }
+    }
+  }
+}

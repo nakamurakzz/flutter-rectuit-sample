@@ -1,4 +1,20 @@
 {
+  "api": {
+    "apiee6389db": {
+      "dependsOn": [
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "contentsmanagemente92b20e7"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "API Gateway"
+    }
+  },
   "auth": {
     "contentsmanagement8f900994": {
       "customAuth": false,
@@ -23,6 +39,51 @@
       },
       "providerPlugin": "awscloudformation",
       "service": "Cognito"
+    }
+  },
+  "function": {
+    "contentsmanagemente92b20e7": {
+      "build": true,
+      "dependsOn": [
+        {
+          "attributeEnvMap": {
+            "Arn": "TABLE_ARN",
+            "Name": "TABLE_NAME"
+          },
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "storage",
+          "resourceName": "dynamo9bbd7ebf"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    }
+  },
+  "parameters": {
+    "AMPLIFY_function_contentsmanagemente92b20e7_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "contentsmanagemente92b20e7"
+        }
+      ]
+    },
+    "AMPLIFY_function_contentsmanagemente92b20e7_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "contentsmanagemente92b20e7"
+        }
+      ]
+    }
+  },
+  "storage": {
+    "dynamo9bbd7ebf": {
+      "providerPlugin": "awscloudformation",
+      "service": "DynamoDB"
     }
   }
 }

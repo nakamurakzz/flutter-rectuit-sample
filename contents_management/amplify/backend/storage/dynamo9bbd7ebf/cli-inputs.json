@@ -1,0 +1,14 @@
+{
+  "resourceName": "dynamo9bbd7ebf",
+  "tableName": "Contents",
+  "partitionKey": {
+    "fieldName": "id",
+    "fieldType": "string"
+  },
+  "sortKey": {
+    "fieldName": "cognitoSub",
+    "fieldType": "string"
+  },
+  "gsi": [],
+  "triggerFunctions": []
+}

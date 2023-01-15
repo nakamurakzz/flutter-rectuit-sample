@@ -9,11 +9,24 @@
       "UnauthRoleName": "amplify-contentsmanagement-dev-200205-unauthRole",
       "StackName": "amplify-contentsmanagement-dev-200205",
       "StackId": "arn:aws:cloudformation:ap-northeast-1:537542138877:stack/amplify-contentsmanagement-dev-200205/e27726c0-93fa-11ed-bafd-0e1b058f6605",
-      "AmplifyAppId": "d2bzkc51tx7vdy"
+      "AmplifyAppId": "d2bzkc51tx7vdy",
+      "APIGatewayAuthURL": "https://s3.amazonaws.com/amplify-contentsmanagement-dev-200205-deployment/amplify-cfn-templates/api/APIGatewayAuthStack.json"
     },
     "categories": {
       "auth": {
         "contentsmanagement8f900994": {}
+      },
+      "function": {
+        "contentsmanagemente92b20e7": {
+          "deploymentBucketName": "amplify-contentsmanagement-dev-200205-deployment",
+          "s3Key": "amplify-builds/contentsmanagemente92b20e7-5930375042322f48636d-build.zip"
+        }
+      },
+      "storage": {
+        "dynamo9bbd7ebf": {}
+      },
+      "api": {
+        "apiee6389db": {}
       }
     }
   }
