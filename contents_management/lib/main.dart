@@ -1,13 +1,11 @@
 import 'package:amplify_flutter/amplify_flutter.dart';
+import 'package:contents_management/pages/contents_parent_page.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:amplify_auth_cognito/amplify_auth_cognito.dart';
 import 'package:flutter/material.dart';
 import 'package:amplify_authenticator/amplify_authenticator.dart';
 import 'amplifyconfiguration.dart';
-import 'pages/contents_page.dart';
 import 'package:amplify_api/amplify_api.dart';
-
-import 'pages/test_page.dart';
 
 void main() {
   runApp(const ProviderScope(child: MyApp()));
@@ -41,8 +39,8 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return Authenticator(
-      child:
-          MaterialApp(builder: Authenticator.builder(), home: TestPageState()),
+      child: MaterialApp(
+          builder: Authenticator.builder(), home: ParentContentsPage()),
     );
   }
 }

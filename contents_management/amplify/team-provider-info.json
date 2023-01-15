@@ -19,7 +19,7 @@
       "function": {
         "contentsmanagement7f54f344": {
           "deploymentBucketName": "amplify-contentsmanagement-dev-200647-deployment",
-          "s3Key": "amplify-builds/contentsmanagement7f54f344-6e546546434c6b446255-build.zip"
+          "s3Key": "amplify-builds/contentsmanagement7f54f344-6f4177556a75666a5671-build.zip"
         }
       },
       "storage": {

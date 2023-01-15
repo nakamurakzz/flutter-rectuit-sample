@@ -1,11 +1,22 @@
-// API Response Model
+// APIレスポンスのモデル
+// Contentはid, title, subtitle, priceプロパティを持つ
 class Content {
-  String title;
-  String body;
-
-  Content({required this.title, required this.body});
-
+  final String id;
+  final String title;
+  final String body;
+  final int order;
+  Content({
+    required this.id,
+    required this.title,
+    required this.body,
+    required this.order,
+  });
   factory Content.fromJson(Map<String, dynamic> json) {
-    return Content(title: json['title'], body: json['body']);
+    return Content(
+      id: json['id'],
+      title: json['title'],
+      body: json['body'],
+      order: json['order'],
+    );
   }
 }
