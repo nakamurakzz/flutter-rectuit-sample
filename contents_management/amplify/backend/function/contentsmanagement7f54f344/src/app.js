@@ -23,9 +23,9 @@ if (process.env.ENV && process.env.ENV !== "NONE") {
 }
 
 const userIdPresent = false; // TODO: update in case is required to use that definition
-const partitionKeyName = "id";
+const partitionKeyName = "cognitoSub";
 const partitionKeyType = "S";
-const sortKeyName = "cognitoSub";
+const sortKeyName = "id";
 const sortKeyType = "S";
 const hasSortKey = sortKeyName !== "";
 const path = "/contents";

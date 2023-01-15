@@ -1,32 +1,32 @@
 {
   "dev": {
     "awscloudformation": {
-      "AuthRoleName": "amplify-contentsmanagement-dev-200205-authRole",
-      "UnauthRoleArn": "arn:aws:iam::537542138877:role/amplify-contentsmanagement-dev-200205-unauthRole",
-      "AuthRoleArn": "arn:aws:iam::537542138877:role/amplify-contentsmanagement-dev-200205-authRole",
+      "AuthRoleName": "amplify-contentsmanagement-dev-200647-authRole",
+      "UnauthRoleArn": "arn:aws:iam::537542138877:role/amplify-contentsmanagement-dev-200647-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::537542138877:role/amplify-contentsmanagement-dev-200647-authRole",
       "Region": "ap-northeast-1",
-      "DeploymentBucketName": "amplify-contentsmanagement-dev-200205-deployment",
-      "UnauthRoleName": "amplify-contentsmanagement-dev-200205-unauthRole",
-      "StackName": "amplify-contentsmanagement-dev-200205",
-      "StackId": "arn:aws:cloudformation:ap-northeast-1:537542138877:stack/amplify-contentsmanagement-dev-200205/e27726c0-93fa-11ed-bafd-0e1b058f6605",
-      "AmplifyAppId": "d2bzkc51tx7vdy",
-      "APIGatewayAuthURL": "https://s3.amazonaws.com/amplify-contentsmanagement-dev-200205-deployment/amplify-cfn-templates/api/APIGatewayAuthStack.json"
+      "DeploymentBucketName": "amplify-contentsmanagement-dev-200647-deployment",
+      "UnauthRoleName": "amplify-contentsmanagement-dev-200647-unauthRole",
+      "StackName": "amplify-contentsmanagement-dev-200647",
+      "StackId": "arn:aws:cloudformation:ap-northeast-1:537542138877:stack/amplify-contentsmanagement-dev-200647/b569e3f0-94c4-11ed-aaba-0636fec9d33d",
+      "AmplifyAppId": "d334c597zvi3j",
+      "APIGatewayAuthURL": "https://s3.amazonaws.com/amplify-contentsmanagement-dev-200647-deployment/amplify-cfn-templates/api/APIGatewayAuthStack.json"
     },
     "categories": {
       "auth": {
-        "contentsmanagement8f900994": {}
+        "contentsmanagement84547cc6": {}
       },
       "function": {
-        "contentsmanagemente92b20e7": {
-          "deploymentBucketName": "amplify-contentsmanagement-dev-200205-deployment",
-          "s3Key": "amplify-builds/contentsmanagemente92b20e7-5930375042322f48636d-build.zip"
+        "contentsmanagement7f54f344": {
+          "deploymentBucketName": "amplify-contentsmanagement-dev-200647-deployment",
+          "s3Key": "amplify-builds/contentsmanagement7f54f344-6e546546434c6b446255-build.zip"
         }
       },
       "storage": {
-        "dynamo9bbd7ebf": {}
+        "dynamoffcfbb0b": {}
       },
       "api": {
-        "apiee6389db": {}
+        "api049f54a2": {}
       }
     }
   }

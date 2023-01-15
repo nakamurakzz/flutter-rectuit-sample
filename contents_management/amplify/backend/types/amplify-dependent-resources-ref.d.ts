@@ -1,13 +1,13 @@
 export type AmplifyDependentResourcesAttributes = {
   "api": {
-    "apiee6389db": {
+    "api049f54a2": {
       "ApiId": "string",
       "ApiName": "string",
       "RootUrl": "string"
     }
   },
   "auth": {
-    "contentsmanagement8f900994": {
+    "contentsmanagement84547cc6": {
       "AppClientID": "string",
       "AppClientIDWeb": "string",
       "IdentityPoolId": "string",
@@ -18,7 +18,7 @@ export type AmplifyDependentResourcesAttributes = {
     }
   },
   "function": {
-    "contentsmanagemente92b20e7": {
+    "contentsmanagement7f54f344": {
       "Arn": "string",
       "LambdaExecutionRole": "string",
       "LambdaExecutionRoleArn": "string",
@@ -27,7 +27,7 @@ export type AmplifyDependentResourcesAttributes = {
     }
   },
   "storage": {
-    "dynamo9bbd7ebf": {
+    "dynamoffcfbb0b": {
       "Arn": "string",
       "Name": "string",
       "PartitionKeyName": "string",

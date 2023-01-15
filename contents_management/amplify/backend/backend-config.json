@@ -1,6 +1,6 @@
 {
   "api": {
-    "apiee6389db": {
+    "api049f54a2": {
       "dependsOn": [
         {
           "attributes": [
@@ -8,7 +8,7 @@
             "Arn"
           ],
           "category": "function",
-          "resourceName": "contentsmanagemente92b20e7"
+          "resourceName": "contentsmanagement7f54f344"
         }
       ],
       "providerPlugin": "awscloudformation",
@@ -16,7 +16,7 @@
     }
   },
   "auth": {
-    "contentsmanagement8f900994": {
+    "contentsmanagement84547cc6": {
       "customAuth": false,
       "dependsOn": [],
       "frontendAuthConfig": {
@@ -42,7 +42,7 @@
     }
   },
   "function": {
-    "contentsmanagemente92b20e7": {
+    "contentsmanagement7f54f344": {
       "build": true,
       "dependsOn": [
         {
@@ -55,7 +55,7 @@
             "Arn"
           ],
           "category": "storage",
-          "resourceName": "dynamo9bbd7ebf"
+          "resourceName": "dynamoffcfbb0b"
         }
       ],
       "providerPlugin": "awscloudformation",
@@ -63,25 +63,25 @@
     }
   },
   "parameters": {
-    "AMPLIFY_function_contentsmanagemente92b20e7_deploymentBucketName": {
+    "AMPLIFY_function_contentsmanagement7f54f344_deploymentBucketName": {
       "usedBy": [
         {
           "category": "function",
-          "resourceName": "contentsmanagemente92b20e7"
+          "resourceName": "contentsmanagement7f54f344"
         }
       ]
     },
-    "AMPLIFY_function_contentsmanagemente92b20e7_s3Key": {
+    "AMPLIFY_function_contentsmanagement7f54f344_s3Key": {
       "usedBy": [
         {
           "category": "function",
-          "resourceName": "contentsmanagemente92b20e7"
+          "resourceName": "contentsmanagement7f54f344"
         }
       ]
     }
   },
   "storage": {
-    "dynamo9bbd7ebf": {
+    "dynamoffcfbb0b": {
       "providerPlugin": "awscloudformation",
       "service": "DynamoDB"
     }

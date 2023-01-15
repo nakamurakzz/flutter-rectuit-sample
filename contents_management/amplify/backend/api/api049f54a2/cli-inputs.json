@@ -3,7 +3,7 @@
   "paths": {
     "/contents": {
       "name": "/contents",
-      "lambdaFunction": "contentsmanagemente92b20e7",
+      "lambdaFunction": "contentsmanagement7f54f344",
       "permissions": {
         "setting": "private",
         "auth": [

@@ -1,12 +1,16 @@
 import 'package:amplify_flutter/amplify_flutter.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:amplify_auth_cognito/amplify_auth_cognito.dart';
 import 'package:flutter/material.dart';
 import 'package:amplify_authenticator/amplify_authenticator.dart';
 import 'amplifyconfiguration.dart';
 import 'pages/contents_page.dart';
+import 'package:amplify_api/amplify_api.dart';
+
+import 'pages/test_page.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(const ProviderScope(child: MyApp()));
 }
 
 class MyApp extends StatefulWidget {
@@ -26,8 +30,8 @@ class _MyAppState extends State<MyApp> {
   Future<void> _configureAmplify() async {
     try {
       final auth = AmplifyAuthCognito();
-      await Amplify.addPlugin(auth);
-
+      final api = AmplifyAPI();
+      await Amplify.addPlugins([api, auth]);
       await Amplify.configure(amplifyconfig);
     } on Exception catch (e) {
       safePrint('An error occurred configuring Amplify: $e');
@@ -37,8 +41,8 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return Authenticator(
-      child: MaterialApp(
-          builder: Authenticator.builder(), home: const ContentsPage()),
+      child:
+          MaterialApp(builder: Authenticator.builder(), home: TestPageState()),
     );
   }
 }

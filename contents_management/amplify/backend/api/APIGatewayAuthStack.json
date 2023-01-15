@@ -11,7 +11,7 @@
     "env": {
       "Type": "String"
     },
-    "apiee6389db": {
+    "api049f54a2": {
       "Type": "String"
     }
   },
@@ -52,7 +52,7 @@
                       },
                       ":",
                       {
-                        "Ref": "apiee6389db"
+                        "Ref": "api049f54a2"
                       },
                       "/",
                       {
@@ -82,7 +82,7 @@
                       },
                       ":",
                       {
-                        "Ref": "apiee6389db"
+                        "Ref": "api049f54a2"
                       },
                       "/",
                       {
